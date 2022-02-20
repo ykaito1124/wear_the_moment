@@ -1,0 +1,11 @@
+.menu {
+    display: flex;
+    justify-content: space-around;
+    a {
+    font-family: $dm-serif-display;
+    margin-top: 1rem;
+    }
+    @media(min-width: 769px){
+        display: none;
+    }
+}
