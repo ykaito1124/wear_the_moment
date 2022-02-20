@@ -1,0 +1,89 @@
+.product-container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @media(min-width: 769px) {
+        #product-item4{
+            order:2;
+        }
+        #product-item5{
+            order:1;
+        }
+        #product-item6{
+            order:3;
+        }
+        #product-item7{
+            order:4;
+        }
+        #product-item8{
+            order:6;
+        }
+        #product-item9{
+            order:5;
+        }
+    }
+}
+
+.product-item{
+    width: 50%;
+    border-radius: 5rem;
+    margin: 0.5rem 0;
+    @media(min-width: 769px) {
+        width: 31%;
+    }
+}
+
+#product-item1{
+    display: none;
+    @media(min-width: 769px) {
+        display: block;
+    }
+}
+
+.information-text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    line-height: 1rem;
+    margin: 5rem 0;
+    @media(min-width: 769px) {
+        line-height: 3rem;
+        margin: 6rem 2rem;
+    }
+}
+
+.product-title{
+    font-size: 2.2rem;
+    font-family: $dm-serif-display;
+    margin: 0 3rem;
+    @media(min-width: 769px){
+        font-size: 2.7rem;
+    }
+}
+
+.information-kounyu{
+    font-size: 1.1rem;
+    @media(min-width: 769px){
+        font-size: 1.2rem;
+    }
+}
+
+.shop-button{
+    border: 1px solid $subcolor1;
+    border-radius: 1rem;
+    line-height: 3rem;
+    padding: 0.5rem 2rem;
+    &:hover{
+        color: #fff;
+        background-color: $subcolor1;
+    }
+} 
+
+.product-discription{
+    display: none;
+    @media(min-width: 769px){
+        display: block;
+        font-size: 1.2rem;
+    }
+}
