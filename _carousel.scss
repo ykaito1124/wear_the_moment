@@ -1,0 +1,74 @@
+.cover-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-family: $oleo-script-swash-caps;
+    font-weight: 700;
+    color: $basecolor;
+    text-align: center;
+    text-shadow: 0 0 1.3rem rgb(0 0 0 / 35%);
+    @media (min-width: 769px){
+        line-height: 1;
+    }
+    a{ // インスタグラムアイコン
+        position: absolute;
+        font-size: 3.5rem;
+        color: $subcolor2;
+        right: 2rem;
+        bottom: 0;
+        text-shadow: none;
+        @media (min-width: 769px){
+            bottom: 2rem;
+            font-size: 5rem;
+        }
+    } 
+    p:hover a{
+        color: $subcolor3;
+    }
+}
+
+.carousel-text-title {
+    margin: 0;
+    font-size: 4.3rem;
+    @media (min-width: 769px){
+        margin-bottom: 4rem;
+        font-size: 10rem;
+    }
+}
+
+.carousel-text-sub {
+    margin: 0;
+    @media (min-width: 769px){
+        font-size: 2.5rem;
+    }
+}
+
+.slick-dots {
+    bottom: 1rem;
+    @media (min-width: 769px){
+        bottom: 3rem;
+    }
+}
+
+.slick-dots li button:before {
+    color: $basecolor;
+    opacity: 0.8;
+}
+
+.slick-dots li.slick-active button:before {
+    color: $subcolor1;
+    opacity: 1;
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 0;
+    @media (min-width: 769px) {
+        margin-bottom: 12rem;
+    }
+}
