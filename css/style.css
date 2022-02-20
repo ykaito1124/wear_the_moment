@@ -1,0 +1,510 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&display=swap");
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #595857;
+  background-color: #fcfaf5;
+}
+@media (min-width: 769px) {
+  body {
+    font-size: 1.6rem;
+  }
+}
+
+a {
+  color: #595857;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  border-radius: 2rem;
+}
+
+.section-title {
+  margin: 11rem 0 3.5rem 0;
+  font-family: "DM Serif Display", "Noto Sans JP", sans-serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-align: center;
+}
+@media (min-width: 769px) {
+  .section-title {
+    margin: 16rem 0 5rem 0;
+    font-size: 5rem;
+  }
+}
+
+main {
+  margin: 0 2rem 2rem 2rem;
+}
+@media (min-width: 769px) {
+  main {
+    margin: 0 6rem 3rem 6rem;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 769px) {
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: 769px) {
+  .container-l {
+    width: 50%;
+  }
+}
+
+@media (min-width: 769px) {
+  .container-r {
+    width: 50%;
+    padding-left: 13rem;
+    box-sizing: border-box;
+  }
+}
+
+.pc-text {
+  display: none;
+}
+@media (min-width: 769px) {
+  .pc-text {
+    display: block;
+  }
+}
+
+.cover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  background-size: cover;
+  background-position: center;
+}
+@media (min-width: 769px) {
+  .cover {
+    height: 100vh;
+    width: 96.5%;
+    margin: 2.5rem;
+  }
+}
+
+.cover picture {
+  width: auto;
+  height: 100vh;
+  object-fit: cover;
+  border-radius: 5rem;
+}
+
+.slick-slide img {
+  display: block;
+  height: 100vh;
+}
+
+.slick-list {
+  border-radius: 2rem;
+}
+
+.cover-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-family: "Oleo Script Swash Caps", "Noto Sans JP", sans-serif;
+  font-weight: 700;
+  color: #fcfaf5;
+  text-align: center;
+  text-shadow: 0 0 1.3rem rgba(0, 0, 0, 0.35);
+}
+@media (min-width: 769px) {
+  .cover-text {
+    line-height: 1;
+  }
+}
+.cover-text a {
+  position: absolute;
+  font-size: 3.5rem;
+  color: #fff;
+  right: 2rem;
+  bottom: 0;
+  text-shadow: none;
+}
+@media (min-width: 769px) {
+  .cover-text a {
+    bottom: 2rem;
+    font-size: 5rem;
+  }
+}
+
+.carousel-text-title {
+  margin: 0;
+  font-size: 4.3rem;
+}
+@media (min-width: 769px) {
+  .carousel-text-title {
+    margin-bottom: 4rem;
+    font-size: 10rem;
+  }
+}
+
+.carousel-text-sub {
+  margin: 0;
+}
+@media (min-width: 769px) {
+  .carousel-text-sub {
+    font-size: 2.5rem;
+  }
+}
+
+.slick-dots {
+  bottom: 1rem;
+}
+@media (min-width: 769px) {
+  .slick-dots {
+    bottom: 3rem;
+  }
+}
+
+.slick-dots li button:before {
+  color: #fcfaf5;
+  opacity: 0.8;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #595857;
+  opacity: 1;
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+@media (min-width: 769px) {
+  .slick-dotted.slick-slider {
+    margin-bottom: 12rem;
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+}
+.menu a {
+  font-family: "DM Serif Display", "Noto Sans JP", sans-serif;
+  margin-top: 1rem;
+}
+@media (min-width: 769px) {
+  .menu {
+    display: none;
+  }
+}
+
+.concept p {
+  text-align: center;
+}
+
+.concept-text {
+  align-items: center;
+}
+
+.concept-phrase {
+  font-size: 1.2rem;
+  font-family: "Shippori Mincho", "Noto Sans JP", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.1em;
+  line-height: 2.1;
+}
+@media (min-width: 769px) {
+  .concept-phrase {
+    font-size: 2.4rem;
+  }
+}
+
+.concept-discription {
+  font-size: 0.9rem;
+  margin: 2rem 1rem;
+}
+@media (min-width: 769px) {
+  .concept-discription {
+    font-size: 1.7rem;
+    width: 87rem;
+    margin: 4rem auto;
+  }
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media (min-width: 769px) {
+  .product-container #product-item4 {
+    order: 2;
+  }
+  .product-container #product-item5 {
+    order: 1;
+  }
+  .product-container #product-item6 {
+    order: 3;
+  }
+  .product-container #product-item7 {
+    order: 4;
+  }
+  .product-container #product-item8 {
+    order: 6;
+  }
+  .product-container #product-item9 {
+    order: 5;
+  }
+}
+
+.product-item {
+  width: 50%;
+  border-radius: 5rem;
+  margin: 0.5rem 0;
+}
+@media (min-width: 769px) {
+  .product-item {
+    width: 31%;
+  }
+}
+
+#product-item1 {
+  display: none;
+}
+@media (min-width: 769px) {
+  #product-item1 {
+    display: block;
+  }
+}
+
+.information-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  line-height: 1rem;
+  margin: 5rem 0;
+}
+@media (min-width: 769px) {
+  .information-text {
+    line-height: 3rem;
+    margin: 6rem 2rem;
+  }
+}
+
+.product-title {
+  font-size: 2.2rem;
+  font-family: "DM Serif Display", "Noto Sans JP", sans-serif;
+  margin: 0 3rem;
+}
+@media (min-width: 769px) {
+  .product-title {
+    font-size: 2.7rem;
+  }
+}
+
+.information-kounyu {
+  font-size: 1.1rem;
+}
+@media (min-width: 769px) {
+  .information-kounyu {
+    font-size: 1.2rem;
+  }
+}
+
+.shop-button {
+  border: 1px solid #595857;
+  border-radius: 1rem;
+  line-height: 3rem;
+  padding: 0.5rem 2rem;
+}
+.shop-button:hover {
+  color: #fff;
+  background-color: #595857;
+}
+
+.product-discription {
+  display: none;
+}
+@media (min-width: 769px) {
+  .product-discription {
+    display: block;
+    font-size: 1.2rem;
+  }
+}
+
+.sns .fb-page {
+  display: flex;
+  justify-content: center;
+}
+
+.Form {
+  display: block;
+  border: 1px solid #595857;
+  border-radius: 2rem;
+  text-align: center;
+  justify-content: center;
+  margin-top: 4rem;
+  margin: 0 auto;
+  max-width: 40rem;
+  max-height: 66rem;
+}
+@media (min-width: 769px) {
+  .Form {
+    max-width: 70rem;
+  }
+}
+
+.Form-Item {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+}
+@media (min-width: 769px) {
+  .Form-Item {
+    flex-wrap: nowrap;
+    margin-left: 1rem;
+  }
+}
+
+.Form-Item-Label {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 248px;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: left;
+  margin: 0 4rem 1.5rem 0;
+}
+
+.Form-Item-Label-Required {
+  border-radius: 0.4rem;
+  margin-right: 8px;
+  padding: 0.8rem 0;
+  width: 3.2rem;
+  display: inline-block;
+  text-align: center;
+  background: #91c373;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.Form-Item-Input {
+  border: 1px solid #595857;
+  border-radius: 1rem;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 40px;
+  flex: inherit;
+  width: 100%;
+  margin: 0 2rem;
+  max-width: 410px;
+  background: #f1f0ec;
+  font-size: 1.3rem;
+}
+
+.Form-Item-Textarea {
+  border: 1px solid #595857;
+  border-radius: 1rem;
+  margin-top: 1.8rem;
+  margin-left: 0;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 20rem;
+  flex: inherit;
+  width: 100%;
+  margin: 0 2rem;
+  max-width: 410px;
+  background: #f1f0ec;
+  font-size: 1.2rem;
+}
+
+.Form-Btn {
+  border-radius: 2rem;
+  margin: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.8rem 0;
+  width: 14rem;
+  display: block;
+  letter-spacing: 0.05em;
+  background: #91c373;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 11rem 0 0 0;
+}
+.footer-info p {
+  font-size: 3.5rem;
+  margin: 0;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: inline-block;
+}
+@media (min-width: 769px) {
+  .footer-info p {
+    font-size: 4.5rem;
+  }
+}
+.footer-info p:last-child {
+  padding-left: 7rem;
+}
+.footer-info p:hover a {
+  font-size: 5rem;
+  color: #91c373;
+}
+
+.footer-shop-button {
+  border: 1px solid #595857;
+  border-radius: 1rem;
+  line-height: 3rem;
+  padding: 0.5rem 2rem;
+}
+
+footer p {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 2rem 0;
+  font-family: "Oleo Script Swash Caps", "Noto Sans JP", sans-serif;
+}
+@media (min-width: 769px) {
+  footer p {
+    font-size: 2rem;
+    margin: 4rem 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
