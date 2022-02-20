@@ -1,0 +1,97 @@
+//
+// ベースのスタイル
+//
+
+
+// 変数
+$basecolor: #fcfaf5; //white-yellow
+$subcolor1: #595857; //dark gray
+$subcolor2: #fff; //white
+$subcolor3: #f1f0ec; //light gray
+$accentcolor1: #91c373; //light green
+$accentcolor2: #122232; //black-blue
+
+$oleo-script-swash-caps: "Oleo Script Swash Caps", "Noto Sans JP", sans-serif;
+$dm-serif-display: "DM Serif Display","Noto Sans JP", sans-serif;
+$shippori-mincho: "Shippori Mincho","Noto Sans JP", sans-serif;
+
+// ベーススタイル
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+    color: $subcolor1;
+    background-color: $basecolor;
+    @media (min-width: 769px) {
+        font-size: 1.6rem;
+    }
+}
+
+a {
+    color: $subcolor1;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    border-radius: 2rem;
+}
+
+.section-title {
+    margin: 11rem 0 3.5rem 0;
+    font-family: $dm-serif-display;
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-align: center;
+    @media (min-width: 769px) {
+        margin: 16rem 0 5rem 0;
+        font-size: 5rem;
+    }
+}
+
+// メイン
+main {
+    margin: 0 2rem 2rem 2rem;
+    @media (min-width: 769px) {
+        margin: 0 6rem 3rem 6rem;
+    }
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 769px) {
+        flex-direction: row;
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
+}
+
+.container-l{
+    @media (min-width: 769px) {
+        width: 50%;
+    }
+}
+
+.container-r {
+    @media (min-width: 769px) {
+        width: 50%;
+        padding-left: 13rem;
+        box-sizing: border-box;
+    }
+}
+
+//PC表示
+.pc-text {
+    display: none;
+    @media (min-width: 769px) {
+        display: block;
+    }
+}
