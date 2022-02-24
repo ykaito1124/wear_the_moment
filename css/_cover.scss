@@ -4,7 +4,6 @@
     align-items: flex-start;
     justify-content: center;
     margin: 1rem;
-    background-size: cover;
     background-position: center;
     @media (min-width: 769px) {
         height: 100vh;
@@ -17,7 +16,7 @@
 .cover picture {
     width: auto;
     height: 100vh;
-    object-fit: cover;
+    background-size: cover;
     border-radius: 5rem;
 }
 
